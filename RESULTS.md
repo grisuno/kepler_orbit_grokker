@@ -1,102 +1,104 @@
 ```text
-🚀 INICIANDO POC DE GROKKING GEOMÉTRICO PARA ÓRBITAS KEPLERIANAS```🚀 INICIANDO POC DE GROKKING GEOMÉTRICO PARA ÓRBITAS KEPLERIANAS==============
-
-🌌 Generando datos de órbitas keplerianas...
-📊 Datos generados: 2000 muestras totales
-   Train: 1600, Test: 400
-
-🧠 Entrenando modelo base (128 unidades ocultas)...
-🎯 Iniciando entrenamiento adaptativo para grokking físico...
-   Parámetros: max_epochs=25000, initial_lr=0.003, weight_decay=5e-06
-🧠 Entrenando para Grokking:  42%|████▎     | 10625/25000 [00:49<01:18, 182.56it/s, train_loss=0.000005, test_loss=0.000050, best_test=0.000050, lr=1.50e-03]
-✨ ¡GROKKING FÍSICO LOGRADO en época 10640!
-   Pérdida de test: 0.00004999 < umbral 5.00e-05
-🧠 Entrenando para Grokking:  43%|████▎     | 10640/25000 [00:49<01:06, 214.74it/s, train_loss=0.000005, test_loss=0.000050, best_test=0.000050, lr=1.50e-03]
-
-📐 Analizando representación geométrica del modelo base...
-   Ángulos H1: 0.6492
-   Ángulos H2: 0.6215
-   Preservación distancias: 0.9828
-
-📈 Generando visualizaciones...
-
-🔍 Evaluando modelo base...
-📊 Modelo_Base - Evaluación:
-   MSE total: 0.00004999
-   MSE X: 0.00005368, MSE Y: 0.00004630
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-💾 Gráfico guardado: orbit_predictions_modelo_base.png
-
-🔄 Expandiendo modelo con TRANSFERENCIA GEOMÉTRICA...
-✅ Expansión geométrica CORREGIDA: 128 → 256
-
-📐 Analizando representación geométrica expandida...
-   Ángulos H1: 0.6489
-   Ángulos H2: 0.6241
-   Preservación distancias: 0.9835
-
-🎯 Evaluando modelo expandido (ZERO-SHOT TRANSFER)...
-📊 Modelo_Expandido - Evaluación:
-   MSE total: 0.24007955
-   MSE X: 0.07884274, MSE Y: 0.40131637
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-💾 Gráfico guardado: orbit_predictions_modelo_expandido.png
-
-📈 Generando datos escalados...
-
-🚀 Evaluando en problema escalado...
-📊 Modelo_Escalado - Evaluación:
-   MSE total: 0.76210976
-   MSE X: 0.17829686, MSE Y: 1.34592259
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
-💾 Gráfico guardado: orbit_predictions_modelo_escalado.png
-
-================================================================================
-📊 RESULTADOS FINALES
-================================================================================
-Modelo Base (128 unidades)          | MSE: 0.00004999 | Grokking: ✅
-Modelo Expandido (256 unidades)     | MSE: 0.24007955 | Zero-shot: ⚠
-Modelo Escalado (datos complejos)   | MSE: 0.76210976 | Transferencia: ⚠
+INITIATING GEOMETRIC GROKING POC FOR KEPLERIAN ORBITS
 ================================================================================
 
-🎯 ANÁLISIS DE ÉXITO:
-   Grokking del algoritmo físico: ✅ LOGRADO
-   Transferencia zero-shot: 🟡 MODERADA
-   Preservación geométrica: ✅ MANTENIDA
-   Escalado a problemas complejos: 🟡 ACEPTABLE
+GENERATING KEPLERIAN ORBIT DATA...
+Generated data: 2000 total samples
+Train: 1600, Test: 400
 
-🌟 RESULTADO GENERAL: ¡PROGRESO SIGNIFICATIVO!
+TRAINING BASE MODEL (128 hidden units)...
+INITIATING ADAPTIVE TRAINING FOR PHYSICAL GROKKING...
+Parameters: max_epochs=25000, initial_lr=0.003, weight_decay=5e-06
+TRAINING FOR GROKING:  46%|███████▉         | 11588/25000 [00:46<01:16, 175.20it/s, train_loss=0.000005, test_loss=0.000050, best_test=0.000050, lr=7.50e-04]
+PHYSICAL GROKING ACHIEVED at epoch 11595!
+Test loss: 0.00004997 < threshold 5.00e-05
+TRAINING FOR GROKING:  46%|███████▉         | 11595/25000 [00:46<00:53, 249.25it/s, train_loss=0.000005, test_loss=0.000050, best_test=0.000050, lr=7.50e-04]
 
-💾 Gráficos guardados:
-   - orbit_predictions_modelo_base.png
-   - orbit_predictions_modelo_expandido.png
-   - orbit_predictions_modelo_escalado.png
-   - learning_curves_modelo_base.png
+ANALYZING BASE MODEL GEOMETRIC REPRESENTATION...
+Angles H1: 0.5937
+Angles H2: 0.5672
+Distance preservation: 0.9786
+
+GENERATING VISUALIZATIONS...
+
+EVALUATING BASE MODEL...
+Base_Model - EVALUATION:
+Total MSE: 0.00004997
+MSE X: 0.00005004, MSE Y: 0.00004990
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Plot saved: orbit_predictions_base_model.png
+
+EXPANDING MODEL WITH GEOMETRIC TRANSFER...
+GEOMETRIC EXPANSION CORRECTED: 128 → 256
+
+ANALYZING EXPANDED GEOMETRIC REPRESENTATION...
+Angles H1: 0.5933
+Angles H2: 0.5712
+Distance preservation: 0.9789
+
+EVALUATING EXPANDED MODEL (ZERO-SHOT TRANSFER)...
+Expanded_Model - EVALUATION:
+Total MSE: 0.09889212
+MSE X: 0.11047431, MSE Y: 0.08730994
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Plot saved: orbit_predictions_expanded_model.png
+
+GENERATING SCALED DATA...
+
+EVALUATING ON SCALED PROBLEM...
+Scaled_Model - EVALUATION:
+Total MSE: 0.07849496
+MSE X: 0.08474111, MSE Y: 0.07224881
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Plot saved: orbit_predictions_scaled_model.png
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Base Model (128 units)              | MSE: 0.00004997 | Grokking: YES
+Expanded Model (256 units)          | MSE: 0.09889212 | Zero-shot: WARNING
+Scaled Model (complex data)         | MSE: 0.07849496 | Transfer: WARNING
+================================================================================
+
+SUCCESS ANALYSIS:
+Physical algorithm grokking: ACHIEVED
+Zero-shot transfer: MODERATE
+Geometric preservation: MAINTAINED
+Scaling to complex problems: ACCEPTABLE
+
+OVERALL RESULT: SIGNIFICANT PROGRESS!
+
+Saved plots:
+   - orbit_predictions_base_model.png
+   - orbit_predictions_expanded_model.png
+   - orbit_predictions_scaled_model.png
+   - learning_curves_base_model.png
+
 ```
