@@ -1,6 +1,10 @@
 # Kepler Orbit Grokker
 Zero-shot transfer of learned physical laws via geometric weight expansion
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18072859.svg)](https://doi.org/10.5281/zenodo.18072859)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
+
 ## What This Does
 
 Train a small neural network on Keplerian orbital dynamics until it "groks" the underlying physical law. Then expand the model to a larger architecture by copying weights into a larger matrix using geometric-preserving initialization. The expanded model demonstrates zero-shot transfer of the learned orbital algorithm—with no additional training.
