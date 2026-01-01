@@ -23,9 +23,9 @@ from scipy import fft
 from scipy.spatial.distance import cdist
 import time
 
-# =============================================================================
+
 # IMPORT app.py WITHOUT MODIFICATIONS
-# =============================================================================
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 
@@ -36,9 +36,9 @@ except ImportError as e:
     st.error(f"❌ CRITICAL: Cannot import app.py: {e}")
     st.stop()
 
-# =============================================================================
+
 # THERMODYNAMIC ENGINE - GAS → LIQUID → SOLID TRANSITIONS
-# =============================================================================
+
 class ThermodynamicAnalyzer:
     """Analyzes weight space as thermodynamic system"""
     
@@ -176,11 +176,11 @@ class ThermodynamicAnalyzer:
         
         return fig
 
-        
 
-# =============================================================================
+
+
 # TRAINING WRAPPER - CAPTURES PHASES WITHOUT MODIFYING app.py
-# =============================================================================
+
 class GrokkingCaptureWrapper:
     """Wraps app.py training to capture phase transitions"""
     
@@ -192,11 +192,11 @@ class GrokkingCaptureWrapper:
         self.y_test = torch.FloatTensor(y_test)
         
         self.criterion = nn.MSELoss()
-        # ========== EXACTO app.py main(): lr=0.003, weight_decay=5e-6 ==========
+        
         self.optimizer = torch.optim.AdamW(
             model.parameters(), lr=0.003, weight_decay=5e-6
         )
-        # ========== EXACTO app.py main(): min_lr=1e-7 ==========
+        
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             self.optimizer, mode='min', factor=0.5, patience=200, min_lr=1e-7
         )
@@ -252,13 +252,13 @@ class GrokkingCaptureWrapper:
         
         best_test_loss = float('inf')
         epochs_no_improve = 0
-        # ========== EXACTO app.py main(): grok_threshold=5e-5 ==========
+        
         grok_threshold = 5e-5
-        # ========== EXACTO app.py main(): patience=2000 ==========
+        
         patience = 2000
         
         for epoch in range(max_epochs):
-            # ========== EXACT app.py TRAINING STEP ==========
+            
             self.model.train()
             self.optimizer.zero_grad()
             outputs = self.model(self.X_train)
@@ -267,17 +267,17 @@ class GrokkingCaptureWrapper:
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
             self.optimizer.step()
             
-            # ========== EXACT app.py EVALUATION ==========
+            
             self.model.eval()
             with torch.no_grad():
                 test_outputs = self.model(self.X_test)
                 test_loss = self.criterion(test_outputs, self.y_test)
             
-            # ========== EXACT app.py SCHEDULER ==========
+            
             self.scheduler.step(test_loss)
             current_lr = self.optimizer.param_groups[0]['lr']
             
-            # ========== CALCULATE LC (Loss Curvature) ==========
+            
             self.history['train_loss'].append(loss.item())
             self.history['test_loss'].append(test_loss.item())
             self.history['lr'].append(current_lr)
@@ -291,7 +291,7 @@ class GrokkingCaptureWrapper:
                 lc = 0.0
             self.history['lc'].append(lc)
             
-            # ========== CALCULATE SUPERPOSITION ==========
+            
             current_weights = self.model.net[0].weight.detach().cpu().numpy().flatten()
             
             if self.prev_weights is not None:
@@ -304,11 +304,11 @@ class GrokkingCaptureWrapper:
             self.history['superposition'].append(superposition)
             self.prev_weights = current_weights.copy()
             
-            # ========== PHASE DETECTION ==========
+            
             current_phase = self._detect_phase(epoch, loss.item(), test_loss.item())
             
-            # ========== PHASE CAPTURE - EXACTO app.py ==========
-            # ========== EXACTO app.py: Noise en epoch 10 ==========
+            
+            
             if epoch == 10 and not self.phase_captured['Noise']:
                 self._capture_phase('Noise', epoch, loss.item(), test_loss.item())
                 with phase_container:
@@ -319,7 +319,7 @@ class GrokkingCaptureWrapper:
                         </div>
                     """, unsafe_allow_html=True)
             
-            # ========== EXACTO app.py: Memorization ==========
+            
             if (loss.item() < 1e-3 and test_loss.item() > 0.01 and 
                 not self.phase_captured['Memorization']):
                 self._capture_phase('Memorization', epoch, loss.item(), test_loss.item())
@@ -331,7 +331,7 @@ class GrokkingCaptureWrapper:
                         </div>
                     """, unsafe_allow_html=True)
             
-            # ========== EXACTO app.py: Transition ==========
+            
             if (1e-4 < test_loss.item() < 5e-4 and 
                 not self.phase_captured['Transition'] and
                 not self.phase_captured['Grokking']):
@@ -344,7 +344,7 @@ class GrokkingCaptureWrapper:
                         </div>
                     """, unsafe_allow_html=True)
             
-            # ========== EXACTO app.py: Grokking con threshold 5e-5 ==========
+            
             if test_loss.item() < grok_threshold and not self.phase_captured['Grokking']:
                 self._capture_phase('Grokking', epoch, loss.item(), test_loss.item())
                 with phase_container:
@@ -355,9 +355,9 @@ class GrokkingCaptureWrapper:
                         </div>
                     """, unsafe_allow_html=True)
                 st.balloons()
-                break  # ========== EXACTO app.py: detiene al grokking ==========
+                break  
             
-            # ========== UI UPDATES ==========
+            
             if epoch % 5 == 0:
                 with header_container:
                     progress_bar.progress(min(epoch / max_epochs, 1.0))
@@ -385,14 +385,14 @@ class GrokkingCaptureWrapper:
                         fig = self._create_realtime_chart_with_metrics()
                         chart_placeholder.plotly_chart(fig, use_container_width=True, key=f"chart_{epoch}")
             
-            # ========== EXACT app.py EARLY STOPPING ==========
+            
             if test_loss.item() < best_test_loss:
                 best_test_loss = test_loss.item()
                 epochs_no_improve = 0
             else:
                 epochs_no_improve += 1
             
-            # ========== EXACTO app.py: patience=2000, min_lr=1e-7*1.1 ==========
+            
             if epochs_no_improve > patience and current_lr <= 1e-7 * 1.1:
                 break
         
@@ -530,9 +530,9 @@ class GrokkingCaptureWrapper:
         
         return fig
         
-# =============================================================================
+
 # GEOMETRY VISUALIZATIONS
-# =============================================================================
+
 
 def visualize_3d_weights(weights_data, phase_name):
     """3D PCA visualization showing gas/liquid/solid structure"""
@@ -642,20 +642,18 @@ def visualize_3d_weights(weights_data, phase_name):
 def visualize_2d_texture(weights_data, phase_name):
     """2D weight texture visualization"""
     
-    # Si weights_data es lista (nuevo formato), usar capa oculta net[2]
     if isinstance(weights_data, list):
-        weights = weights_data[1]  # net[2] = 128×128 (la capa con más geometría)
+        weights = weights_data[1]  # net[2] = 128×128
         st.info(f"📊 Visualizando capa oculta: {weights.shape[0]}×{weights.shape[1]} = {weights.size:,} pesos")
     else:
-        weights = weights_data  # Formato antiguo
+        weights = weights_data  
     
     fig = make_subplots(
         rows=1, cols=2,
         subplot_titles=('Weight Heatmap', 'Weight Distribution')
     )
-    
-    # Heatmap - AHORA con toda la capa oculta 128×128
-    size = min(128, weights.shape[0])  # Usar toda la capa si es 128×128
+
+    size = min(128, weights.shape[0]) 
     fig.add_trace(
         go.Heatmap(
             z=weights[:size, :size],
@@ -755,9 +753,9 @@ def visualize_orbit_predictions(model, X_test, y_test, num_samples=6):
     
     return fig
 
-# =============================================================================
+
 # MAIN APPLICATION
-# =============================================================================
+
 
 def main():
     st.set_page_config(
