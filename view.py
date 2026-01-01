@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 view.py - COMPLETE GROKKING PHASE TRANSITION VISUALIZER
-Professional production-grade system for real-time visualization of phase transitions.
-Imports and USES app.py WITHOUT modifications - wraps training for capture.
 """
 
 import streamlit as st
@@ -24,7 +22,7 @@ from scipy.spatial.distance import cdist
 import time
 
 
-# IMPORT app.py WITHOUT MODIFICATIONS
+# IMPORT app.py 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
@@ -46,7 +44,7 @@ class ThermodynamicAnalyzer:
     def compute_metrics(weights_data, phase, epoch):
         """Calculate complete thermodynamic state"""
         
-        # Si es lista (nuevo formato), usar weights_combined
+ 
         if isinstance(weights_data, np.ndarray):
             W = weights_data.flatten()
         else:
@@ -179,7 +177,7 @@ class ThermodynamicAnalyzer:
 
 
 
-# TRAINING WRAPPER - CAPTURES PHASES WITHOUT MODIFYING app.py
+# TRAINING WRAPPER
 
 class GrokkingCaptureWrapper:
     """Wraps app.py training to capture phase transitions"""
@@ -217,7 +215,7 @@ class GrokkingCaptureWrapper:
     def train_with_capture(self, max_epochs=25000, snapshot_every=50):
         """Train using EXACT app.py logic with LC and Superposition tracking"""
         
-        # Create persistent UI containers
+
         header_container = st.container()
         metrics_container = st.container()
         advanced_metrics_container = st.container()
@@ -558,14 +556,13 @@ def visualize_3d_weights(weights_data, phase_name):
     # Calculate neuron properties
     norms = np.linalg.norm(W_sample, axis=1)
     
-    # Calculate local density for each point (simulates gas/liquid/solid)
+
     from scipy.spatial.distance import cdist
     distances = cdist(proj, proj)
-    # Más sensible: percentil 20 en vez de 10
+
     threshold = np.percentile(distances, 20)
     local_density = np.sum(distances < threshold, axis=1)
     
-    # Calculate clustering coefficient (NUEVO)
     from sklearn.cluster import DBSCAN
     clustering = DBSCAN(eps=threshold, min_samples=3).fit(proj)
     n_clusters = len(set(clustering.labels_)) - (1 if -1 in clustering.labels_ else 0)
@@ -604,7 +601,6 @@ def visualize_3d_weights(weights_data, phase_name):
         'Grokking': f'SOLID PHASE: Tight crystal structure, minimum entropy<br>Clusters: {n_clusters}, Mean density: {local_density.mean():.1f}'
     }
     
-    # Calculate spread (varianza de las distancias)
     spread = np.std(distances[np.triu_indices_from(distances, k=1)])
     
     title_text = f"<b>3D Neural Network Geometry: {phase_name.upper()}</b><br>"
@@ -755,8 +751,6 @@ def visualize_orbit_predictions(model, X_test, y_test, num_samples=6):
 
 
 # MAIN APPLICATION
-
-
 def main():
     st.set_page_config(
         page_title="🔬 Grokking Phase Transition Lab",
@@ -895,13 +889,10 @@ def main():
         
         with tabs[1]:
             st.subheader("🧠 3D Weight Space Geometry - Neural Network Structure")
-            
-            # Phase selector - THE MOST IMPORTANT FEATURE
             st.markdown("### 🎯 SELECT PHASE TO VISUALIZE:")
             
             available_phases = list(wrapper.phase_snapshots.keys())
-            
-            # Create phase selector with colors
+
             phase_colors = {
                 'Noise': '🔴 GAS (Stochastic Cloud)',
                 'Memorization': '🟠 LIQUID (Cluster Formation)', 
