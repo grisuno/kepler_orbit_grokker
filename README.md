@@ -76,6 +76,19 @@ The geometric initialization ensures that new neurons inherit the coordinate sys
 - **algebra-de-grok**: Zero-shot transfer of subset parity tasks via weight expansion
 - **SWAN-Phoenix-Rising**: Applied same method to medical classification (AUROC > 0.99)
 
+## Reproducibility
+
+Code and pretrained grokked models are publicly available:
+
+- Core Framework: [https://github.com/grisuno/agi](https://github.com/grisuno/agi)
+- Parity Cassette: [https://github.com/grisuno/algebra-de-grok](https://github.com/grisuno/algebra-de-grok)
+- Wave Cassette: [https://github.com/grisuno/1d_wave_equation_grokker](https://github.com/grisuno/1d_wave_equation_grokker)
+- Kepler Cassette: [https://github.com/grisuno/kepler_orbit_grokker](https://github.com/grisuno/kepler_orbit_grokker)
+- Pendulum Cassette: [https://github.com/grisuno/chaotic_pendulum_grokked](https://github.com/grisuno/chaotic_pendulum_grokked)
+- Ciclotron Cassette: [https://github.com/grisuno/supertopo3](https://github.com/grisuno/supertopo3)
+- MatMul 2x2 Cassette: [https://github.com/grisuno/matrixgrokker](https://github.com/grisuno/matrixgrokker)
+- HPU Hamiltonian Cassette: [https://github.com/grisuno/HPU-Core](https://github.com/grisuno/HPU-Core)
+
 ## Technical Implementation
 
 # Base training
