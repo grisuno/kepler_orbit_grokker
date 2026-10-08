@@ -1,0 +1,1117 @@
+{
+  "concepts": [
+    {
+      "name": "app",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "weight",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "grokking",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "orbit",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "predictions",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "structure",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "train",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "training",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "weights",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "analyzes",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "space",
+      "files": [
+        "app.py",
+        "view.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "analyzes",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "analyzes",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "grokking",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "orbit",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "predictions",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "space",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "structure",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "train",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "training",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "analyzes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "app",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "grokking",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "orbit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "predictions",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "space",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "structure",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    },
+    {
+      "source": "weight",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "view.py->app.py"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `app` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `grokking` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `orbit` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `predictions` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `space` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `structure` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `train` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `training` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `weight` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `analyzes` centralizes 2 files; Antithesis: `weights` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?"
+  ]
+}
