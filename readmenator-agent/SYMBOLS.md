@@ -12,7 +12,7 @@
 | `generate_kepler_orbits` | function | `app.py:22` | `def generate_kepler_orbits(n_samples, noise_level, max_time, seed)` |
 | `main` | method | `app.py:391` | `def main()` |
 | `plot_learning_curves` | method | `app.py:366` | `def plot_learning_curves(history, model_name)` |
-| `train_until_grok` | method | `app.py:93` | `def train_until_grok(model, X_train, y_train, X_test, y_test, max_epochs, patience, initial_lr, min_lr...` |
+| `train_until_grok` | method | `app.py:93` | `def train_until_grok(model, X_train, y_train, X_test, y_test, max_epochs, patience, initial_lr, min_lr, weight_decay, gr` |
 | `GrokkingCaptureWrapper` | class | `view.py:182` | `class GrokkingCaptureWrapper` |
 | `ThermodynamicAnalyzer` | class | `view.py:40` | `class ThermodynamicAnalyzer` |
 | `__init__` | method | `view.py:185` | `def __init__(self, model, X_train, y_train, X_test, y_test)` |

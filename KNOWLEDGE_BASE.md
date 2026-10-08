@@ -12,7 +12,7 @@
 **Total Files Parsed:** 3 | **Total Symbols Extracted:** 25 | **Total Imports:** 29
  | **Resolved Imports:** 1
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -26,13 +26,12 @@
 7. [Hotspot Analysis](#hotspot-analysis)
 8. [Change Impact Analysis](#change-impact-analysis)
 9. [Suggested Linting Rules](#suggested-linting-rules)
-10. [Concept Graph](#concept-graph)
-11. [Orphans](#orphans)
-12. [Query Recipes](#query-recipes)
-13. [Structural Knowledge Map](#structural-knowledge-map)
-14. [UML Class Diagram](#uml-class-diagram)
-15. [Code Property Graph](#code-property-graph)
-16. [Architecture Reference](#architecture-reference)
+10. [Orphans](#orphans)
+11. [Query Recipes](#query-recipes)
+12. [Structural Knowledge Map](#structural-knowledge-map)
+13. [UML Class Diagram](#uml-class-diagram)
+14. [Code Property Graph](#code-property-graph)
+15. [Architecture Reference](#architecture-reference)
     - [PY (2 files)](#py-2-files)
     - [SH (1 files)](#sh-1-files)
 
@@ -139,76 +138,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 | `app.py` | 0.786 | 0.476 | 0.600 | 11 | 10 |
 | `view.py` | 1.000 | 1.000 | 1.000 | 14 | 21 |
 | `install.sh` | 0.000 | 0.000 | 0.000 | 0 | 0 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**11 concepts, 100 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `app` | 2 | 5 |
-| `weight` | 2 | 4 |
-| `grokking` | 2 | 3 |
-| `orbit` | 2 | 3 |
-| `predictions` | 2 | 3 |
-| `structure` | 2 | 3 |
-| `train` | 2 | 3 |
-| `training` | 2 | 3 |
-| `weights` | 2 | 3 |
-| `analyzes` | 2 | 2 |
-| `space` | 2 | 2 |
-
-### Verb Edges
-
-| Source | Verb | Target | Strength | Evidence |
-|--------|------|--------|----------|----------|
-| `analyzes` | `depends_on` | `app` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `grokking` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `orbit` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `predictions` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `space` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `structure` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `train` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `training` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `weight` | 1.00 | 1 |
-| `analyzes` | `depends_on` | `weights` | 1.00 | 1 |
-| `app` | `depends_on` | `analyzes` | 1.00 | 1 |
-| `app` | `depends_on` | `grokking` | 1.00 | 1 |
-| `app` | `depends_on` | `orbit` | 1.00 | 1 |
-| `app` | `depends_on` | `predictions` | 1.00 | 1 |
-| `app` | `depends_on` | `space` | 1.00 | 1 |
-| `app` | `depends_on` | `structure` | 1.00 | 1 |
-| `app` | `depends_on` | `train` | 1.00 | 1 |
-| `app` | `depends_on` | `training` | 1.00 | 1 |
-| `app` | `depends_on` | `weight` | 1.00 | 1 |
-| `app` | `depends_on` | `weights` | 1.00 | 1 |
-| `grokking` | `depends_on` | `analyzes` | 1.00 | 1 |
-| `grokking` | `depends_on` | `app` | 1.00 | 1 |
-| `grokking` | `depends_on` | `orbit` | 1.00 | 1 |
-| `grokking` | `depends_on` | `predictions` | 1.00 | 1 |
-| `grokking` | `depends_on` | `space` | 1.00 | 1 |
-| `grokking` | `depends_on` | `structure` | 1.00 | 1 |
-| `grokking` | `depends_on` | `train` | 1.00 | 1 |
-| `grokking` | `depends_on` | `training` | 1.00 | 1 |
-| `grokking` | `depends_on` | `weight` | 1.00 | 1 |
-| `grokking` | `depends_on` | `weights` | 1.00 | 1 |
-
-### Dialectic Prompts
-
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `app` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `grokking` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `orbit` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `predictions` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `space` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `structure` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `train` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `training` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `weight` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
-- Thesis: `analyzes` centralizes 2 files; Antithesis: `weights` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
 
 ---
 

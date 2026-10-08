@@ -5,14 +5,8 @@
 These files have the most connections. Changes here have high blast radius.
 
 - `view.py` (score: 3.40)
-- `app.py` (score: 3.10, imported by 1 files)
+- `app.py` (score: 3.10)
 - `install.sh` (score: 0.00)
-
-## Blast Radius (change impact)
-
-Editing these files can break the listed number of dependents. Run their tests after any change.
-
-- `app.py` -- 1 direct, 1 total dependents
 
 ## Hotspots (complexity + centrality)
 

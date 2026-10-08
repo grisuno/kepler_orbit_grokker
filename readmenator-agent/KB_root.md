@@ -1,13 +1,13 @@
 # Subsystem: root
 
 ## app.py
-- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
 - Layer: utility
+- Doc: app.py  Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación: xx/xx/xxxx Licenci
 - Language: py
 - Symbols:
   - `generate_kepler_orbits` (function, line 22) `def generate_kepler_orbits(n_samples, noise_level, max_time, seed)`
   - `KeplerOrbitPredictor` (class, line 67) `class KeplerOrbitPredictor(Module)`
-  - `train_until_grok` (method, line 93) `def train_until_grok(model, X_train, y_train, X_test, y_test, max_epochs, patience, initial_lr, min_lr...`
+  - `train_until_grok` (method, line 93) `def train_until_grok(model, X_train, y_train, X_test, y_test, max_epochs, patience, initial_lr, min_lr, weight_decay, grok_threshold)`
   - `analyze_geometric_representation` (method, line 198) `def analyze_geometric_representation(model, X_sample)`
   - `expand_model_weights_geometric` (method, line 228) `def expand_model_weights_geometric(base_model, scale_factor)`
   - `evaluate_model` (method, line 282) `def evaluate_model(model, X_test, y_test, model_name, num_examples)`
@@ -23,8 +23,8 @@
 - Language: sh
 
 ## view.py
-- Doc: COMPLETE GROKKING PHASE TRANSITION VISUALIZER
 - Layer: presentation
+- Doc: view.py - COMPLETE GROKKING PHASE TRANSITION VISUALIZER
 - Language: py
 - Symbols:
   - `ThermodynamicAnalyzer` (class, line 40) `class ThermodynamicAnalyzer`
